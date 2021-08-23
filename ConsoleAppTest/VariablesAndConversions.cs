@@ -2,7 +2,7 @@
 
 namespace ConsoleAppTest
 {
-    class Program
+    class VariablesAndConversions
     {
         static void Main(string[] args)
         {
@@ -55,9 +55,10 @@ namespace ConsoleAppTest
                 string number = "1234";
                 int i = Convert.ToInt32(number);
                 Console.WriteLine(i);
+            */
 
-                try
-                {
+            try
+            {
                     string letters = "asdf";
                     byte b = Convert.ToByte(letters);
                     Console.WriteLine(b);
@@ -77,7 +78,7 @@ namespace ConsoleAppTest
                 {
                     Console.WriteLine("str cannot convert to boolean");
                 }
-            */
+
         }
     }
 }
