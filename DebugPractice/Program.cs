@@ -12,13 +12,14 @@ namespace DebugPractice
 
             foreach (int number in smallests)
             {
+                // should return 1, 2, 3
                 Console.WriteLine(number);
             }
         }
 
         public static List<int> GetSmallests(List<int> list, int count)
         {
-            List<int> smallests = new List<int>(list);
+            List<int> smallests = new List<int>();
 
             while (smallests.Count < count)
             {
