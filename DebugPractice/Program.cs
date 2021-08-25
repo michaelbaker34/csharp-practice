@@ -7,45 +7,45 @@ namespace DebugPractice
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6};
-            List<int> fewerNumbers = new List<int> {1, 2};
+            List<int> numbers = new List<int> {1, 2};
             List<int> smallests = GetSmallests(numbers, 3);
-            List<int> fewerSmallests = GetSmallests(fewerNumbers, 3);
 
             foreach (int number in smallests)
             {
                 // expected output "1, 2, 3"
                 Console.WriteLine(number);
-
-                // expected output "1, 2"
-                Console.WriteLine(fewerNumbers);
             }
         }
+
 
         public static List<int> GetSmallests(List<int> list, int count)
         {
             List<int> smallests = new List<int>();
 
-            while (smallests.Count < count)
+            if (count < 0)
             {
-                int min = GetSmallest(list);
-                smallests.Add(min);
-                list.Remove(min);
+                while (smallests.Count < count)
+                {
+                    int min = GetSmallest(list);
+                    smallests.Add(min);
+                    list.Remove(min);
+                }
             }
             return smallests;
         }
 
+
         public static int GetSmallest(List<int> list)
         {
-            //assumes first number is smallest
-           int min = list[0];
+            // assumes first number is smallest
+            int min = list[0];
+
             for (int i = 1; i < list.Count; i++)
             {
                 if (list[i] < min)
                 {
                     min = list[i];
                 }
-                
             }
             return min;
         }
