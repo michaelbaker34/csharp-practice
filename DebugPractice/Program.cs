@@ -12,7 +12,7 @@ namespace DebugPractice
 
             foreach (int number in smallests)
             {
-                // expected output "1, 2, 3"
+                // expected output "1, 2"
                 Console.WriteLine(number);
             }
         }
