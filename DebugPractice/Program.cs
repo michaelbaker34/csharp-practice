@@ -7,12 +7,12 @@ namespace DebugPractice
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int> {1, 2};
+            List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6};
             List<int> smallests = GetSmallests(numbers, 3);
 
-            foreach (int number in smallests)
+            foreach (int number in numbers)
             {
-                // expected output "1, 2"
+                // expected output "1, 2, 3, 4, 5, 6"
                 Console.WriteLine(number);
             }
         }
@@ -27,7 +27,7 @@ namespace DebugPractice
                 {
                     int min = GetSmallest(bufferList);
                     smallests.Add(min);
-                    list.Remove(min);
+                    bufferList.Remove(min);
                 }
             return smallests;
         }
