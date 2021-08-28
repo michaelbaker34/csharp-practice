@@ -20,9 +20,12 @@ namespace DebugPractice
 
         public static List<int> GetSmallests(List<int> list, int count)
         {
-            if (count > list.Count)
+            if (list == null)
+                throw new ArgumentNullException("list", "list cannot be null");
+
+            if (count > list.Count || count <= 0)
             {
-                throw new ArgumentOutOfRangeException("count", "count is greater than number of elements in list");
+                throw new ArgumentOutOfRangeException("count", "count must be between 1 and number of elements in list");
             }
 
             List<int> smallests = new List<int>();
