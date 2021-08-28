@@ -7,12 +7,12 @@ namespace DebugPractice
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int> {1, 2};
+            List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6};
             List<int> smallests = GetSmallests(numbers, 3);
 
             foreach (int number in smallests)
             {
-                // expected output "1, 2, 3, 4, 5, 6"
+                // expected output "1, 2, 3"
                 Console.WriteLine(number);
             }
         }
