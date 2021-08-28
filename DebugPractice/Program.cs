@@ -21,16 +21,14 @@ namespace DebugPractice
         public static List<int> GetSmallests(List<int> list, int count)
         {
             List<int> smallests = new List<int>();
+            List<int> bufferList = new List<int>(list);
 
-            if (count < 0)
-            {
                 while (smallests.Count < count)
                 {
-                    int min = GetSmallest(list);
+                    int min = GetSmallest(bufferList);
                     smallests.Add(min);
                     list.Remove(min);
                 }
-            }
             return smallests;
         }
 
