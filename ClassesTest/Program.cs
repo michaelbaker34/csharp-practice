@@ -17,7 +17,10 @@ namespace ClassesTest
     {
         static void Main(string[] args)
         {
+            var person = new Person();
 
+            person.Name = "Bob";
+            person.Introduce("Bill");
         }
 
     }
