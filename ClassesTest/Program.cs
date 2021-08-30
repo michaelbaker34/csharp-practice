@@ -5,6 +5,7 @@ namespace ClassesTest
     public class Person
     {
         public string Name;
+        public int Age;
 
         public void Introduce(string to)
         {
@@ -21,6 +22,7 @@ namespace ClassesTest
 
             person.Name = "Bob";
             person.Introduce("Bill");
+            person.Age = 30;
         }
 
     }
