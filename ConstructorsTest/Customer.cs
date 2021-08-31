@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace ConstructorsTest
 {
@@ -6,23 +6,26 @@ namespace ConstructorsTest
     {
         public int Id;
         public string Name;
+        public List<Order> Orders;
 
 
         // default constructor
         public Customer()
         {
+            Orders = new List<Order>();
         }
 
         public Customer(int id)
+            : this()
         {
             this.Id = id;
         }
 
-        // constructor overload
+        // overload
         public Customer(int id, string name)
+            : this(id)
         {
             this.Name = name;
-            this.Id = id;
         }
 
     }
