@@ -6,18 +6,10 @@ namespace ConstructorsTest
     {
         public int Id;
         public string Name;
-        public List<Order> Orders;
-        public List<string> Colors;
-
-
-        // default constructor
-        public Customer()
-        {
-            Orders = new List<Order>();
-        }
+        // empty params initialize without constructor
+        public readonly List<Order> Orders = new List<Order>();
 
         public Customer(int id)
-            : this()
         {
             this.Id = id;
         }
@@ -27,6 +19,10 @@ namespace ConstructorsTest
             : this(id)
         {
             this.Name = name;
+        }
+
+        public void Promote()
+        {
         }
 
     }
