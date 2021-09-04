@@ -11,6 +11,7 @@ namespace ConstructorsTest
 
             Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
+            Console.WriteLine(order);
         }
     }
 }
