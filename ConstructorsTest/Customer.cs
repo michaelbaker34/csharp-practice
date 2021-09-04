@@ -7,6 +7,7 @@ namespace ConstructorsTest
         public int Id;
         public string Name;
         public List<Order> Orders;
+        public List<string> Colors;
 
 
         // default constructor
