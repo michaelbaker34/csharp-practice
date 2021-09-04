@@ -23,8 +23,7 @@ namespace MethodsPractice
 
         public void Move(Point newLocation)
         {
-            this.x = newLocation.x;
-            this.y = newLocation.y;
+            Move(newLocation.x, newLocation.y);
         }
     }
 }
