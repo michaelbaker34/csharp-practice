@@ -23,6 +23,9 @@ namespace MethodsPractice
 
         public void Move(Point newLocation)
         {
+            if (newLocation == null)
+                throw new ArgumentNullException("newLocation");
+
             Move(newLocation.x, newLocation.y);
         }
     }
