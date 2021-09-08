@@ -6,7 +6,7 @@ namespace GenericsTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var book = new Book { BookIsbn = 1111, BookTitle = "Title" };
         }
     }
 }

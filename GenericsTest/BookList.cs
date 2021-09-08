@@ -13,7 +13,7 @@ namespace GenericsTest
             throw new NotImplementedException();
         }
 
-        public BookList this[int index]
+        public Book this[int index]
         {
             get { throw new NotImplementedException(); }
         }
