@@ -8,17 +8,48 @@ namespace CalculatorApp
 {
     class Calculator
     {
-        private int userInput;
-        private int result;
+        private double firstUserInput;
+        private double nextUserInput;
+        private double finalResult;
 
-        public int UserInput
+        public double FirstUserInput
         {
-            get { return userInput; }
+            get { return firstUserInput; }
             set
             {
-                userInput = value;
+                firstUserInput = value;
             }
         }
+
+        public double NextUserInput
+        {
+            get { return nextUserInput; }
+            set
+            {
+                nextUserInput = value;
+            }
+        }
+
+        public double FinalResult
+        {
+            get { return finalResult; }
+            set
+            {
+                finalResult = value;
+            }
+        }
+
+        public Calculator()
+        {
+        }
+
+        public Calculator(double firstUserInput, double nextUserInput)
+        {
+            firstUserInput = FirstUserInput;
+            nextUserInput = NextUserInput;
+        }
+
+
         
     }
 }
