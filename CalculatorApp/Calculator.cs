@@ -8,6 +8,17 @@ namespace CalculatorApp
 {
     class Calculator
     {
+        private int userInput;
+        private int result;
 
+        public int UserInput
+        {
+            get { return userInput; }
+            set
+            {
+                userInput = value;
+            }
+        }
+        
     }
 }
