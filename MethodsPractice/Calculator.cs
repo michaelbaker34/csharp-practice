@@ -18,5 +18,16 @@ namespace MethodsPractice
             }
             return sum;
         }
+
+        public int Subtract(params int[] numbers)
+        {
+            var difference = 0;
+            foreach (var number in numbers)
+            {
+                difference -= number;
+            }
+            return difference;
+        }
+
     }
 }
