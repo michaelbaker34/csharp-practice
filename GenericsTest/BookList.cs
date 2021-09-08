@@ -8,7 +8,7 @@ namespace GenericsTest
 {
     public class BookList
     {
-        public void Add(BookList book)
+        public void Add(Book book)
         {
             throw new NotImplementedException();
         }
