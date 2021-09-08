@@ -21,6 +21,10 @@ namespace GenericsTest
             var number = new Nullable<int>(5);
             Console.WriteLine("Has Value ? " + number.HasValue);
             Console.WriteLine("Value: " + number.GetValueOrDefault());
+
+            var empty = new Nullable<int>();
+            Console.WriteLine("Has Value ? " + empty.HasValue);
+            Console.WriteLine("Value: " + empty.GetValueOrDefault());
         }
     }
 }
