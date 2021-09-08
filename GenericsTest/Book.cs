@@ -1,26 +1,7 @@
 ﻿namespace GenericsTest
 {
-    public class Book
+    public class Book : Product
     {
-        private string bookIsbn;
-        private string bookTitle;
-
-        public string BookIsbn
-        {
-            get { return bookIsbn; }
-            set
-            {
-                bookIsbn = value ;
-            }
-        }
-
-        public string BookTitle
-        {
-            get { return bookTitle; }
-            set
-            {
-                bookTitle = value;
-            }
-        }
+        public string Isbn { get; set; }
     }
 }

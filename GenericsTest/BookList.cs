@@ -20,7 +20,7 @@ namespace GenericsTest
 
         public class GenericDictionary<tKey, tValue>
         {
-            public void add(tKey key, tValue value)
+            public void Add(tKey key, tValue value)
             {
 
             }
