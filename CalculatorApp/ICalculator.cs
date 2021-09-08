@@ -8,5 +8,12 @@ namespace CalculatorApp
 {
     interface ICalculator
     {
+        double Add();
+
+        double Subtract();
+
+        double Multiply();
+
+        double Divide();
     }
 }
