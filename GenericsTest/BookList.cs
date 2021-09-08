@@ -18,6 +18,14 @@ namespace GenericsTest
             get { throw new NotImplementedException(); }
         }
 
+        public class GenericDictionary<tKey, tValue>
+        {
+            public void add(tKey key, tValue value)
+            {
+
+            }
+        }
+
         public class GenericList<T>
         {
             public void Add(T value)

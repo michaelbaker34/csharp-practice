@@ -2,10 +2,10 @@
 {
     public class Book
     {
-        private int bookIsbn;
+        private string bookIsbn;
         private string bookTitle;
 
-        public int BookIsbn
+        public string BookIsbn
         {
             get { return bookIsbn; }
             set
