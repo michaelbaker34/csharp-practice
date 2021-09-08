@@ -7,16 +7,20 @@ namespace GenericsTest
     {
         static void Main(string[] args)
         {
-            var book = new Book { Isbn = "1111", Title = "Title" };
+            //var book = new Book { Isbn = "1111", Title = "Title" };
 
-            var numbers = new GenericList<int>();
-            numbers.Add(10);
+            //var numbers = new GenericList<int>();
+            //numbers.Add(10);
 
-            var books = new GenericList<Book>();
-            books.Add(new Book());
+            //var books = new GenericList<Book>();
+            //books.Add(new Book());
 
-            var dictionary = new GenericDictionary<string, Book>();
-            dictionary.Add("1234", new Book());
+            //var dictionary = new GenericDictionary<string, Book>();
+            //dictionary.Add("1234", new Book());
+
+            var number = new Nullable<int>(5);
+            Console.WriteLine("Has Value ? " + number.HasValue);
+            Console.WriteLine("Value: " + number.GetValueOrDefault());
         }
     }
 }
