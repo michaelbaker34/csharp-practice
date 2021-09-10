@@ -16,10 +16,22 @@ namespace DelegatesPractice
 
         public event VideoEncodedEventHandler VideoEncoded;
 
+        protected virtual void OnVideoEncoded()
+        {
+            // if subscribers exist
+            if (VideoEncoded != null)
+            {
+                VideoEncoded(this, EventArgs.Empty);
+            }
+        }
+
         public void Encode(Video video)
         {
             Console.WriteLine("Encoding Video...");
             Thread.Sleep(3000);
+
+            // call event
+            OnVideoEncoded();
         }
     }
 }
