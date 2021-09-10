@@ -12,8 +12,11 @@ namespace DelegatesPractice
             var videoEncoder = new VideoEncoder();
             // subscriber
             var mailService = new MailService();
+            // subscriber
+            var messageService = new MessageService();
              
             videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
             videoEncoder.Encode(video);
         }
     }
