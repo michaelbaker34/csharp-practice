@@ -8,6 +8,13 @@ namespace DelegatesPractice
 {
     public class VideoEncoder
     {
+        // Define delegate (method signature)
+        // Define event based on delegate
+        // Raise(publish) event
+
+        public delegate void VideoEncodedEventHandler(object source, EventArgs args);
+
+
         public void Encode(Video video)
         {
             Console.WriteLine("Encoding Video...");
