@@ -14,6 +14,7 @@ namespace DelegatesPractice
 
         public delegate void VideoEncodedEventHandler(object source, EventArgs args);
 
+        public event VideoEncodedEventHandler VideoEncoded;
 
         public void Encode(Video video)
         {
