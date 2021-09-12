@@ -6,6 +6,8 @@ using System.Threading;
 
 namespace DelegatesPractice
 {
+
+
     public class VideoEncoder
     {
         // Define delegate (method signature)
